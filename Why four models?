@@ -1,10 +1,13 @@
-The task was to improve the model from the Square Mean v
-As a result of this i chose to improve the RandomRegression model. Inorder to improve the model, 
-I had to tune the hyperparameters of the model using RandomSeachCV but that did not work.
-
+The task was to improve the model from the coefficient of regression.
+Hence i had to make sure I was getting either r2 to be 0.7 or higher.
+I used the RandomForestRegression model instead of RandomSeachCV because it provided a 0.7 r2 as compared to the 0.5 r2 produced by the RandomSearchCV. 
+I had tried uing hyperparameter tunning to further improve the RandomForestRegressor but it was not giving me desired results. 
 Hence I resolved to using other techniques namely Correlation Analysis and Forward/Backward Attribute Selection.
-This involved training the model on all the attributes or columns and slowly taking away columns to train the model for backward attribute selection and starting with one column and slowly building it up with more columns for forward attribute selection.
+This involved training the model on all the attributes or columns and slowly taking away columns to train the model for backward attribute selection 
+and starting with one column and slowly building it up with more columns for forward attribute selection.
 
-When improving the models, certain columns were exemepted because they didnot improve the model
-or were not needed but the important columns per the description of the project 
-were not taken out. 5 models were built with similar code and the same Regression model (RandomForestRegression). The extra 4 models were obtained in addition to the baseline model as a result of removing certain columns that were not needed and adding a weekend column to the data.
+When improving the models, certain columns were exemepted because they were not needed but the important columns per the description of the project 
+were not taken out. 
+5 models were built with similar code and the same Regression model (RandomForestRegression). 
+The extra 4 models were obtained in addition to the baseline model as a result of removing certain columns that were not needed 
+and adding a weekend column to the data.
