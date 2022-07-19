@@ -1,5 +1,5 @@
 The task was to improve the model from the coefficient of regression.
-Hence i had to make sure I was getting either r2 to be 0.7 or higher.
+Hence i had to make sure I was getting either r2 to be 0.7 or higher when i built the model.
 I used the RandomForestRegression model instead of RandomSeachCV because it provided a 0.7 r2 as compared to the 0.5 r2 produced by the RandomSearchCV. 
 I had tried uing hyperparameter tunning to further improve the RandomForestRegressor but it was not giving me desired results. 
 Hence I resolved to using other techniques namely Correlation Analysis and Forward/Backward Attribute Selection.
